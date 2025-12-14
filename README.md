@@ -37,7 +37,8 @@
 
 **3X-UI-SHOP** is a comprehensive solution designed to automate the sale of VPN subscriptions through Telegram.
 The bot uses the **3X-UI** panel API for client management and supports multiple payment methods, including
-**Cryptomus**, **Heleket**, **YooKassa**, **YooMoney**, and **Telegram Stars**.
+**Cryptomus**, **Heleket**, **YooKassa**, **YooMoney**, and **Telegram Stars**. Currently the repository is configured to use
+**only Telegram Stars**; the other gateways remain commented out for future reuse.
 
 The bot enables efficient subscription sales with advanced features:
 
@@ -160,11 +161,11 @@ Before starting the installation, make sure you have the installed [**Docker**](
 | SHOP_REFERRER_LEVEL_ONE_PERIOD | ⭕ | 10 | Reward in days for the first-level referrer (inviter) |
 | SHOP_REFERRER_LEVEL_TWO_PERIOD | ⭕ | 3 | Reward in days for the second-level referrer (inviter of the inviter). |
 | SHOP_BONUS_DEVICES_COUNT | ⭕ | 1 | Default Device Limit for Promocode, Trial, and Referral Users (Based on Plan Settings) |
-| SHOP_PAYMENT_STARS_ENABLED | ⭕ | True | Enable Telegram stars payment |
-| SHOP_PAYMENT_CRYPTOMUS_ENABLED | ⭕ | False | Enable Cryptomus payment |
-| SHOP_PAYMENT_HELEKET_ENABLED | ⭕ | False | Enable Heleket payment |
-| SHOP_PAYMENT_YOOKASSA_ENABLED | ⭕ | False | Enable Yookassa payment |
-| SHOP_PAYMENT_YOOMONEY_ENABLED | ⭕ | False | Enable Yoomoney payment |
+| SHOP_PAYMENT_STARS_ENABLED | ⭕ | True | Enable Telegram stars payment (the only active gateway) |
+| SHOP_PAYMENT_CRYPTOMUS_ENABLED | ⭕ | False | Enable Cryptomus payment (commented out by default) |
+| SHOP_PAYMENT_HELEKET_ENABLED | ⭕ | False | Enable Heleket payment (commented out by default) |
+| SHOP_PAYMENT_YOOKASSA_ENABLED | ⭕ | False | Enable Yookassa payment (commented out by default) |
+| SHOP_PAYMENT_YOOMONEY_ENABLED | ⭕ | False | Enable Yoomoney payment (commented out by default) |
 | | | |
 | XUI_USERNAME | 🔴 | - | Username for authentication in the 3X-UI panel |
 | XUI_PASSWORD | 🔴 | - | Password for authentication in the 3X-UI panel |

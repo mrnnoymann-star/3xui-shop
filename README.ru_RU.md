@@ -37,7 +37,7 @@
 
 ## 📝 Обзор
 
-**3X-UI-SHOP** — это комплексное решение, предназначенное для автоматизации продажи подписок на VPN через Telegram. Бот использует API панели **3X-UI** для управления клиентами и поддерживает различные способы оплаты, включая **Cryptomus**, **Heleket**, **YooKassa**, **YooMoney** и **Telegram Stars**.
+**3X-UI-SHOP** — это комплексное решение, предназначенное для автоматизации продажи подписок на VPN через Telegram. Бот использует API панели **3X-UI** для управления клиентами и поддерживает различные способы оплаты, включая **Cryptomus**, **Heleket**, **YooKassa**, **YooMoney** и **Telegram Stars**. Сейчас репозиторий настроен на работу **только с Telegram Stars**; остальные шлюзы временно закомментированы и могут быть возвращены при необходимости.
 
 Основные возможности:
 
@@ -160,11 +160,11 @@
 | SHOP_REFERRER_LEVEL_ONE_PERIOD | ⭕ | 10 | Вознаграждение в днях от первого уровня реферала |
 | SHOP_REFERRER_LEVEL_TWO_PERIOD | ⭕ | 3 | Вознаграждение в днях от второго уровня реферала |
 | SHOP_BONUS_DEVICES_COUNT | ⭕ | 1 | Лимит устройств по умолчанию для промокодов, пробной подписки и рефералов (в зависимости от настроек плана) |
-| SHOP_PAYMENT_STARS_ENABLED | ⭕ | True | Включить оплату через Telegram Stars |
-| SHOP_PAYMENT_CRYPTOMUS_ENABLED | ⭕ | False | Включить оплату через Cryptomus |
-| SHOP_PAYMENT_HELEKET_ENABLED | ⭕ | False | Включить оплату через Heleket |
-| SHOP_PAYMENT_YOOKASSA_ENABLED | ⭕ | False | Включить оплату через YooKassa |
-| SHOP_PAYMENT_YOOMONEY_ENABLED | ⭕ | False | Включить оплату через YooMoney |
+| SHOP_PAYMENT_STARS_ENABLED | ⭕ | True | Включить оплату через Telegram Stars (единственный активный шлюз) |
+| SHOP_PAYMENT_CRYPTOMUS_ENABLED | ⭕ | False | Включить оплату через Cryptomus (по умолчанию закомментирован) |
+| SHOP_PAYMENT_HELEKET_ENABLED | ⭕ | False | Включить оплату через Heleket (по умолчанию закомментирован) |
+| SHOP_PAYMENT_YOOKASSA_ENABLED | ⭕ | False | Включить оплату через YooKassa (по умолчанию закомментирован) |
+| SHOP_PAYMENT_YOOMONEY_ENABLED | ⭕ | False | Включить оплату через YooMoney (по умолчанию закомментирован) |
 | | | |
 | XUI_USERNAME | 🔴 | - | Имя пользователя для аутентификации в панели 3X-UI |
 | XUI_PASSWORD | 🔴 | - | Пароль для аутентификации в панели 3X-UI |

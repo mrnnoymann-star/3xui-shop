@@ -8,11 +8,7 @@ from app.bot.models import ServicesContainer
 from app.config import Config
 
 from ._gateway import PaymentGateway
-from .cryptomus import Cryptomus
-from .heleket import Heleket
 from .telegram_stars import TelegramStars
-from .yookassa import Yookassa
-from .yoomoney import Yoomoney
 
 
 class GatewayFactory:
@@ -43,12 +39,14 @@ class GatewayFactory:
     ) -> None:
         dependencies = [app, config, session, storage, bot, i18n, services]
 
+        # Only Telegram Stars payments are currently enabled; other gateways are
+        # temporarily commented out but left in the repository for future reuse.
         gateways = [
             (config.shop.PAYMENT_STARS_ENABLED, TelegramStars),
-            (config.shop.PAYMENT_CRYPTOMUS_ENABLED, Cryptomus),
-            (config.shop.PAYMENT_HELEKET_ENABLED, Heleket),
-            (config.shop.PAYMENT_YOOKASSA_ENABLED, Yookassa),
-            (config.shop.PAYMENT_YOOMONEY_ENABLED, Yoomoney),
+            # (config.shop.PAYMENT_CRYPTOMUS_ENABLED, Cryptomus),
+            # (config.shop.PAYMENT_HELEKET_ENABLED, Heleket),
+            # (config.shop.PAYMENT_YOOKASSA_ENABLED, Yookassa),
+            # (config.shop.PAYMENT_YOOMONEY_ENABLED, Yoomoney),
         ]
 
         for enabled, gateway_cls in gateways:
